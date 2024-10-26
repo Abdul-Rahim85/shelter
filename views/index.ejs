@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <%- include('./layout/head.ejs') %>
+<body>
+	<% function helprequestReport() {%>
+		<main class="report">
+			<div class="thead">
+				<div>الرقم</div>
+				<div>نوع المساعدة</div>
+				<div>تاريخ الإضافة</div>
+				<div>المكان</div>
+				<div>طالب المساعدة</div>
+				<div>وسائل التواصل</div>
+				<div>ملاحظات</div>
+			</div>
+
+			
+			<div class="tbody">
+				<div class="row">
+					<div>1</div>
+					<div>وظيفة</div>
+					<div>2024/8/4</div>
+					<div>حلفا الجديدة</div>
+					<div>فرد</div>
+					<div>122558476</div>
+					<div>انا مكانيكي سيارت احتاج لوظيفة</div>
+				</div>
+
+				<div class="row">
+					<div>2</div>
+					<div>مسكن</div>
+					<div>2025/7/6</div>
+					<div>بورتسودان</div>
+					<div>مجموعة افراد</div>
+					<div>968841559</div>
+					<div>نحن مجموع من الطلاب نبحث عن سكن</div>
+				</div>
+
+				<div class="row">
+					<div>3</div>
+					<div>مستلزمات الحياة</div>
+					<div>2024/9/1</div>
+					<div>مدني</div>
+					<div>مجموع من الاسر</div>
+					<div>917388368</div>
+					<div>نحن مواطني مدينة ود مدني نحتاج الي مواد غذائية</div>
+				</div>
+
+				<div class="row">
+					<div>4</div>
+					<div>علاج و ادوية</div>
+					<div>2023/7/2</div>
+					<div>القضاررف</div>
+					<div>اسرة</div>
+					<div>900288974</div>
+					<div>نحن اسرة قادمة من سنار نحتاج للعلاج</div>
+				</div>
+		</main>
+	<% } %>
+	<!-- This function is use to creata a list of all help  -->
+	<% function helpReport() {%>
+		<main class="report">
+			<div class="thead">
+				<div>الرقم</div>
+				<div>نوع المساعدة</div>
+				<div>تاريخ الإضافة</div>
+				<div>الكمية</div>
+				<div>المستهدفين</div>
+				<div>المكان</div>
+				<div>ملاحظات</div>
+			</div>
+
+			<div class="tbody">
+				<div class="row">
+					<div>1</div>
+					<div>مواد غذائية</div>
+					<div>2024/10/26</div>
+					<div>10 حزمة</div>
+					<div>اسر</div>
+					<div>كسلا</div>
+					<div>توجد مواد غذائية</div>
+				</div>
+
+				<div class="row">
+					<div>2</div>
+					<div>فحص العيون</div>
+					<div>2025/4/3</div>
+					<div>2025/5/3</div>
+					<div>الكل</div>
+					<div>الابيض</div>
+					<div>يوجد كشف للعيون في مستشفى الابيض</div>
+				</div>
+
+				<div class="row">
+					<div>3</div>
+					<div>وظيفة</div>
+					<div>2024/9/8</div>
+					<div>9</div>
+					<div>مجموعة افراد</div>
+					<div>الفاشر</div>
+					<div>نبحث عن فنيين في السباكه</div>
+				</div>
+
+				<div class="row">
+					<div>4</div>
+					<div>مسكن</div>
+					<div>2023/3/8</div>
+					<div>1</div>
+					<div>فرد</div>
+					<div>كادقلي</div>
+					<div>توجد غرفه و حمام و دورة مياه لشخص واحد</div>
+				</div>
+			</div>
+		</main>
+	<% } %>
+	
+		<!-- This function is used to create a list of all users provide help report -->
+		<% function usersReport() {%>
+			<main class="report">
+				<div class="thead">
+					<div>الرقم</div>
+					<div>إسم المستخدم</div>
+					<div>البريد الإلكتروني</div>
+					<div>رقم الهاتف</div>
+					<div>وسائل التواصل</div>
+					<div>الدولة</div>
+				</div>
+
+				<div class="tbody">
+					<div class="row">
+						<div>1</div>
+						<div>aya</div>
+						<div>aya@gmail.com</div>
+						<div>912968834</div>
+						<div>Facebook - Whatsapp - Email</div>
+						<div>امدرمان</div>
+					</div>
+
+					<div class="row">
+						<div>2</div>
+						<div>Mohammed</div>
+						<div>mohammed@gmail.com</div>
+						<div>968841559</div>
+						<div>Facebook - Whatsapp - Email</div>
+						<div>الجزيرة</div>
+					</div>
+					<div class="row">
+						<div>3</div>
+						<div>ساره</div>
+						<div>sara@gmail.com</div>
+						<div>917388368</div>
+						<div>Facebook - Whatsapp - Email</div>
+						<div>امدرمان</div>
+					</div>
+					<div class="row">
+						<div>4</div>
+						<div>نفيسة</div>
+						<div>nafiesa@gmail.com</div>
+						<div>900288974</div>
+						<div>Facebook - Whatsapp - Email</div>
+						<div>الجزيرة</div>
+					</div>
+
+					<div class="row">
+						<div>5</div>
+						<div>محمد خيري</div>
+						<div>khiery@gmail.com</div>
+						<div>922962332</div>
+						<div>Facebook - Whatsapp - Email</div>
+						<div>دنقلا</div>
+					</div>
+
+					<div class="row">
+						<div>6</div>
+						<div>محمد ابكر</div>
+						<div>fox@gmail.com</div>
+						<div>999881841</div>
+						<div>Facebook - Whatsapp - Email</div>
+						<div>عطبره</div>
+					</div>
+
+					<div class="row">
+						<div>7</div>
+						<div>البراء</div>
+						<div>albra@gmail.com</div>
+						<div>926699368</div>
+						<div>Facebook - Whatsapp - Email</div>
+						<div>Sudan</div>
+					</div>
+
+					<div class="row">
+						<div>8</div>
+						<div>Abdulrahim</div>
+						<div>abdulrahim@gmail.com</div>
+						<div>122858804</div>
+						<div>Facebook - Whatsapp - Email</div>
+						<div>شندي</div>
+					</div>
+
+					<div class="row">
+						<div>9</div>
+						<div>عائشة</div>
+						<div>ayoosh@gmail.com</div>
+						<div>913943905</div>
+						<div>Facebook - Whatsapp - Email</div>
+						<div>Sudan</div>
+					</div>
+				</div>
+			</main>
+	<% } %>
+
+		<aside>
+			<div class="fraim">
+				<img src="../img/user.svg" alt="admin picture">
+			</div>
+			<h2>محمد انور</h2>
+
+			<nav>
+				<a href="/dashboard">عرض جميع المساعدين</a>
+				<a href="/dashboard/helpoffer">عرض جميع المساعدات</a>
+				<a href="/dashboard/helprequest">عرض جميع طلبات المساعدة</a>
+			</nav>
+
+			<a href="/logout" class="logout">تسجيل الخروج</a>
+		</aside>
+		<% if (report == 'allUser') { %>
+			<% usersReport() %>
+	  <% } else if (report == 'allOffer') { %>
+			<% helpReport() %>
+	  <% } else if (report == 'allHelprequest') {%>
+			<% helprequestReport() %>
+		<% } %>
+</body>
+</html>

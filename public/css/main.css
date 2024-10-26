@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --primary-color: #81007F;
+  --secondery-color: #F68722;
+  --table-color: #e7f9ff;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* The aside styles */
+body aside {
+  width: 20%;
+  height: 100%;
+  background-color: var(--secondery-color);
+  display: flex;
+  flex-flow: column;
+}
+
+body aside .fraim{
+  width: 75%;
+  height: 32%;
+  background-color: var(--table-color);
+  margin: 10% auto 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body aside .fraim img {
+  width: 80%;
+  height: 80%;
+}
+
+body aside h2 {
+  margin-bottom: 15%;
+  color: var(--primary-color);
+  font-family: Cairo;
+  text-align: center;
+}
+
+body aside nav{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+body aside nav a {
+  background-color: #F68722;
+  margin: 15px 0;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #e7f9ff;
+  font-size: 20px;
+  font-family: cairo;
+}
+
+aside a.logout {
+  width: 100%;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding-bottom: 3px;
+  margin: 25% 0 0;
+  justify-self: flex-end;
+  text-decoration: none;
+  color: var(--table-color);
+  font-family: cairo;
+  font-size: 25px;
+}
+
+/*main page style*/
+body main.report{
+  width: 80%;
+  height: 100%;
+}
+
+body main .thead, .tbody{
+  width: 100%;
+  font-family: cairo;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+body main .thead{
+  width: 100%;
+  background-color: #eee;
+  color: var(--primary-color);
+}
+
+body main .tbody{
+  height: 95.8%;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+body main .tbody .row {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+

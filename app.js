@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const { requireAuth } = require('./authMiddleware');
 const apiRoute = require('./routes/api/apiRoute');
 const cookieParser = require('cookie-parser');
@@ -15,16 +15,16 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // htis uri is to connect to the DB 
-const dbConnectionString = process.env.DB_URI;
-mongoose.connect(dbConnectionString, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => {
-        console.log('connecting to the Database sccesfull');
-    })
-    .catch((err) => {
-        console.log(err);
-
-    });
-
+// const dbConnectionString = process.env.DB_URI;
+// mongoose.connect(dbConnectionString)
+//     .then(() => {
+//         console.log('connecting to the Database sccesfull');
+//     })
+//     .catch((err) => {
+//         console.log(err);
+        
+//     });
+    
 app.listen(PORT)
 
 // app setting
@@ -49,7 +49,7 @@ app.use('/api/v1/help', requireAuth, helpRoute);
 app.use('/login', authRoute);
 
 // home page router
-app.use('/dashboard', requireAuth, dashboardRoute);
+app.use('/dashboard', dashboardRoute);
 
 app.get('/logout', authController.logout_get)
 
